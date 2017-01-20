@@ -1,10 +1,16 @@
 Dear students, 
 
-I'm looking forward to our first meeting on Thursday! To prepare for class, please review the syllabus/calendar/etc I've posted at http://bc-cisc3120-f16.github.io/ -- in particular, take a look at http://bc-cisc3120-f16.github.io/calendar to see what we'll be doing during our first meeting. (Please note that I will be updating the calendar frequently.)
+I'm looking forward to our first meeting in a couple weeks! To prepare for class, please review the syllabus/calendar/etc I've posted at http://bc-cisc3120-s17.github.io/.
 
-If you haven't acquired the book yet, please do so ASAP--ideally, you'll have read the Introduction before Thursday's class. Also, please fill out the short survey you'll find in the calendar under "Class 2." 
+In particular, please take note of a few specific things:
 
-Finally, we'll be using Eclipse as our development environment; if you have a computer on which you can install software, please follow the instructions posted at https://bc-cisc3120-f16.github.io/eclipse.html.
+1. I'll be teaching the class using "Team-Based Learning." Several of you have had this experience with me before; others have been in other classes organized this way. If you're new to Team-Based Learning, please read the main page of the site carefully (and if you've been in my courses before, you might want to read to see a few small changes I've made).
 
-Until Thursday, 
+2. If you haven't acquired the book yet, please do so ASAP--please read the Introduction before our first class.
+
+3. Please fill out the short survey you'll find in the calendar under "Class 2." (You can link directly to the calendar at http://bc-cisc3120-s17.github.io/calendar. This calendar will be updated frequently with additional links and changes. I will email you to let you know of major changes, but you should check every couple days.)
+
+4. Finally, we'll be using Eclipse as our development environment; if you have a computer on which you can install software, please follow the instructions posted at https://bc-cisc3120-s17.github.io/eclipse.html. (Note that you will be required to submit your work as Eclipse projects; thus using Eclipse is a requirement of the course.)
+
+Until we meet,
 Scott Dexter
