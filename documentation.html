@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>About Documentation</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'
+    rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+
+        <h2>About Documentation and Style</h2>
+
+
+        <p>The fundamental purpose of documentation is to enhance the readability
+          of your code&mdash;that is, to make it easier for future
+          readers of your code (very much including you-a-week-from-now)
+          to understanding what your code is supposed to do. On this
+          page, I describe my expectations for the readability of the
+          code you submit to me.</p>
+
+        <p><em>Style</em> refers primarily to the way your code
+        appears on the screen/page. It also encompasses some ideas
+        about the design of your code&mdash;mostly, techniques you
+        should avoid because they are likely to break in the future.
+        The Internet has many examples of excellent Java style guides;
+          I recommend
+        the <a href="https://github.com/twitter/commons/blob/master/src/java/com/twitter/common/styleguide.md">GitHub
+        Java Style Guide</a>. As you read through it, you will
+        probably see many unfamiliar terms and concepts. Don't worry.
+        Look for what the guide says about familiar elements of coding
+        practice; when you come back to the guide later in the
+        semester, you'll understand more&mdash;and if you return to it
+        in a year, you'll understand even more.
+</p>
+        
+        <p>
+          <em>Documentation</em> refers to the non-executable text
+          that describes the design and intended behavior of the
+          executable part of your code. Style guides sometimes provide
+          guidance about how to write and structure your
+          documentation. Below, I describe what kinds of documentation
+          you need to provide for projects in this class.
+        </p>
+
+        <p>Project documentation comes in three flavors:
+            <ol>
+                <li>In-line comments</li>
+                <li>Javadoc comments</li>
+                <li>Project README</li>
+            </ol>
+        </p>
+          
+        <h3>In-line comments</h3>
+
+        <p>
+        While good style dictates that your code be as
+        "self-documenting" as possible, through the use of
+        descriptive-but-brief variable names, it also dictates that you
+        comment on anything that's not "obvious."
+        </p>
+
+        <h3>Javadoc comments</h3>
+
+        <p>
+            This is where most of your documentation effort should go.
+            In the project skeletons I provide you, you will see some
+            simple HTML documentation. This was produced 
+            from my comments using Javadoc&mdash;note that class and method
+            comments all begin with two stars and occasionally use
+            javadoc notation like
+            <code>@see</code>
+            and
+            <code>@param</code>
+            . You should revise and augment this documentation as
+            needed. See <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html#format">this explanation</a> of how doccomments are best written.
+        </p>
+
+        <p>
+            When you want to see what your documentation looks like, in
+            Eclipse look under the Project menu for "Generate
+            JavaDoc..."&mdash;you shouldn't need to alter any of the
+            default settings. Note that Git/GitHub will commit your
+            documentation (in the
+            <code>doc</code>
+            folder) along with the rest of your project, though you
+            may have to make sure the folder is included in your
+            repository.
+        </p>
+
+        <h3>Project README</h3>
+
+        I also ask you to edit the
+        <code>README.md</code>
+        file. It should be clear how to get started on writing this
+        file, but for more information on how it can be formatted (using
+        "Github-Flavored Markdown"), read <a
+            href="https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/">this</a>
+        about markdown basics.
+
+    </div>
+</body>
+</html>

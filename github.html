@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>About GitHub</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'
+    rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+      <a href="index.html">CISC 3120</a><br />
+      
+        <h2>About GitHub</h2>
+
+        <p>
+           As part of the introductory survey, you should have given me your GitHub username. If you haven't done so yet, please complete that survey!
+        </p>
+
+      <p>We'll spend a class session practicing git/GitHub actions,
+      but before then, here's a little basic info:</p>
+        <p>
+            GitHub is, roughly speaking, a hosted source code management
+            solution (though it can manage all kinds of project, not
+            just software development). It uses the rather awesome
+            software <a href="http://git-scm.com/">git</a>. It is a <em>distributed</em>
+            source code management tool, which means that it's very easy
+            to work on code with multiple collaborators (a few, a few
+            hundred...), very easy to work on your code from multiple
+            locations, and also very easy to keep track of your work,
+            try different approaches, and decide what you want to keep
+            and what you want to discard. For the purposes of this
+            class, there are two fairly limited uses we'll have for
+            GitHub:
+
+            <ul>
+                <li>It's easy for me to update the course website, and for you to see exactly what changes have been made.</li>
+                <li>I'll be able to distribute code for programming
+                    projects, and grade your work, without paper, email,
+                    etc.</li>
+            </ul>
+
+        </p>
+
+        <p>So, first: all the published material for the course
+            (including this page) is in a GitHub repository at</p>
+
+        <p>
+            <a
+                href="https://github.com/BC-CISC3120-F16/BC-CISC3120-F16.github.io">https://github.com/BC-CISC3120-F16/BC-CISC3120-F16.github.io</a>
+        </p>
+
+        <p>As you'll soon learn, this page lets you see exactly what changes I've made to the course web pages as the semester progresses.</p>
+
+        <p>Second: assignments. Once I have your GitHub username, I will
+        make you part of the class "organization" on GitHub. For each
+        project I assign, I will create a "private repository" for you,
+        with a copy of the assignment and any 'skeleton' code the
+        project needs. You will "clone" this repository to whichever
+        computer you're using, make changes to the project there, and
+        regularly "push" your work to your private repository on GitHub.
+        If you have questions, you can ask me about them and I can just
+        look at your code on GitHub. When it comes time to grade, I will
+        clone your repository to my computer, then push it back with my
+        grading comments. And yes, I'll give you instructions about how
+        to do all of this: it takes a little time to get used to, but
+        it's a very powerful way of working with code.</p>
+
+        <hr />
+        <h2>Using GitHub</h2>
+
+        <p>
+            Please read the first two chapters of the <a
+                href="http://git-scm.com/doc">git book</a> ("Getting
+            Started" and "Git Basics"). This will give you a basic sense
+            of what git is for. Don't worry about memorizing
+            command-line stuff; mainly, we'll be interacting with git
+            through Eclipse and GitHub rather than the command line. But
+            the main concepts (like 'repository,' 'clone,' 'commit') are
+            fundamental no matter what interface to git you're using.
+        </p>
+
+        <p>Our GitHub lab will give you some practice with these
+        concepts. When we start working on programming projects,
+        you'll apply these concepts, following the instructions below.
+        
+
+        <h3>GitHub and Your Projects</h3>
+
+        <p>
+            For at least the first two programming assignments (#0 and #1), I will give you a private
+            repository on GitHub. Open your GitHub account and find the
+            main page for this repository. Copy the URL of the page
+            (something like
+            <code>http://github.com/myaccount/project0-intro</code>
+            ).
+        </p>
+
+        <p>Now, open Eclipse and import the project/repository. Go
+            to File->Import and, under the "Git" option select "Projects
+            from Git" In the window that pops up, select "Clone URI"
+            (and click Next). In the next window, paste in the URL you
+            copied from GitHub (in the "URI" field). You will need to
+            enter your GitHub username and password in the bottom of the
+            window.</p>
+
+        <p>
+            That gets your project hooked up with git and GitHub. You
+            should have a project named something like
+            <code>project0-intro</code>
+            .
+        </p>
+
+        <p>
+            Now comes the good stuff. Every time you get a little bit of
+            progress made on your work, you should <b>Commit</b> it.
+            (Explore my repository for the class webpage to see some
+            example commits.) To do this, right-click on any file in
+            your project (or the project folder itself), and from the
+            "Team" submenu select "Commit..." (there is also a keyboard
+            shortcut, which will depend on your operating system ). This
+            will bring up a window. Enter a brief explanation of what
+            changes you made (again, look at my commits); you can add a
+            longer explanation if you like, Just leave a blank line
+            after your brief description, then write as much as you
+            like. If you then click the "Commit" button, you will record
+            this 'snapshot' of your current state of work in your <em>local</em>
+            copy of the project. If you select "Commit and Push," this
+            snapshot will also be recorded on GitHub--this is both an
+            easy form of backup, and it also lets me ssee how your work
+            is progressing. 
+        </p>
+
+    </div>
+</body>
+</html>

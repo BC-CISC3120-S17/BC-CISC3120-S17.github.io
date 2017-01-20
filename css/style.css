@@ -1,0 +1,81 @@
+BODY {
+	font-family:'Source Sans Pro', sans-serif;
+	margin-top:20px;
+	text-align:center;
+}
+
+strong {
+	color:#799131;
+}
+
+A:link {
+	text-decoration:underline;
+	color:#696969;
+}
+
+A:active {
+	text-decoration:underline;
+	color:#696969;
+}
+
+A:visited {
+	text-decoration:underline;
+	color:#696969;
+}
+
+pre {
+	white-space:pre-wrap;
+	white-space:-moz-pre-wrap;
+	white-space:-o-pre-wrap;
+	background:#faf8f0;
+}
+
+td {
+	vertical-align: top;
+}
+
+.exam {
+  color:red;
+}
+
+.project {
+  color:green;
+}
+
+#content #pre-stylish code {
+	display:block;
+	padding:.5em 1em;
+	border:1px solid #bebab0;
+}
+
+#container {
+	margin:0 auto;
+	width:900px;
+	text-align:left;
+}
+
+#calendar {
+	width:100%;
+	border-collapse:collapse;
+}
+
+#calendar td,#calendar th {
+	font-size:1em;
+	border:1px solid #696969;
+	padding:3px 7px 2px;
+	vertical-align:top;
+}
+
+#calendar th {
+	font-size:1.1em;
+	text-align:left;
+	padding-top:5px;
+	padding-bottom:4px;
+	background-color:#404040;
+	color:#fff;
+}
+
+#calendar tr.alt td {
+	color:#000;
+	background-color:#F0F0F0;
+}

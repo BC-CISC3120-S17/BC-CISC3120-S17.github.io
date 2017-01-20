@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Project On</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'
+    rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css"
+    href="http://www.sci.brooklyn.cuny.edu/~sdexter/style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <h1>Project Two: WebSockets Checkers</h1>
+
+        <h2>Overview</h2>
+
+        <p>The main objective of this project is to give you experience writing WebSockets code.
+
+
+        <p>The project is due at 8am on the day of the final. I will
+        clone your repositories for grading at that time.</p>
+
+        <h2>The Project</h2>
+
+        <p>In this project, you will take the infrastructure for a simple GUI game&mdash;checkers&mdash;and add WebSockets code that will allow the game to be played over a network.</p>
+
+        <h3>The Existing Code</h3>
+
+        <p>The code in this repository is in three packages. <code>checkers.client</code> contains GUI code for drawing a checkerboard. <code>checkers.common</code> contains some classes used by both the client and server: a kind of "lightweight" model of a checkerboard that represents the board, the squares on the board, and the players who may occupy those squares. The client, for example, will use this lightweight model to draw the board. Finally, <code>checkers.server</code> contains a "heavier" model which includes the rules of checkers&mdash; which jumps are legal? when does a checker get kinged? and so on. Note that the client will run as it is, but nothing will happen when you try to move a checker.</p>
+
+        <h3>A Network Architecture</h3>
+        <p>This code is ready to be embedded in a WebSockets application. Here's the idea: Once a "checkers server" starts, clients can connect in order to play. Once two clients have connected, the server lets them start playing. When a client tries to make a move, a message is sent to the server. If the move is not legal, an "illegal move" message is sent back to the client, and nothing else happens. If the move <em>is</em> legal, then the server sends a message to both clients, letting them know that the move has been made and indicating that it's the other player's turn. The clients, in turns, should update their display of the board and let the users know whose turn it is.</p>
+
+        <p><em>Important:</em> when a user tries to make a move, the client should <em>not</em> display that move immediately&mdash;it MUST send the move to the server. The display should only ever be updated in response to a message from the server.</p>
+
+        <p>Of course, when a player wins, the server should send an appropriate message, and the clients, upon receiving that message, should end play.</p>
+
+        <h2>What You Need to Do</h2>
+
+        <p>The GUI code and checkers-model code is in good shape. Your focus is on communication: What kinds of messages will the clients send to the server? What kinds of messages will the server send to the clients?</p>
+
+        <p>How will your client code actually send messages to the server? When should such messages be sent?</p>
+
+        <p>On the server side, how will you code a relationship between the WebSockets endpoint and the checkers model?</p>
+        
+        
+    <h2>Behavior</h2>
+
+        <p>Your application should
+        <ol>
+        <li>allow clients to connect to the server</li>
+        <li>allow the clients to play a "legal" game of checkers</li>
+        <li>inform players when a game has ended</li>
+        </ol></p>
+
+        <p>You could also add extra functionality to make the game more enjoyable. For example, you might to incorporate a chat behavior so that the players can talk trash.  (But please get the basic application working before you think much about extra stuff!) ></p>
+        
+  
+ 
+
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Unit 6 Reading Guide</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'
+    rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+
+        <h2>Unit 6 Reading Guide</h2>
+
+
+        <p>First, read selected portions of the Oracle Tutorial:
+          <ul>
+            <li>Main Page</li>
+            
+            <li>18.2 "Creating WebSocket Applications..."</li>
+            
+            <li>18.4 "Annotated Endpoints"</li>
+            
+            <li>18.5 "Sending and Receiving Messages"</li>
+            
+            <li>18.6 "Maintaining Client State"</li>
+        </ul></p>
+
+        <p>Note that you'll probably have to read all of this before you start to get a sense of how WebSockets works. You might even want to read it twice.</p>
+
+        <p>Also look at the code in "part 1" of the "simple example." This is a complete, if simple, server.</p>
+
+        <p>Finally, look at the example with a "Java client." You can skip the introductory material; start with "The Application." Don't worry too much about the chunk of server code on lines 11-34, or the client code on lines 16-49. (Though you should certainly read that code and try to get a sense of what it's doing.) </p>
+
+        <p>We talked briefly about annotations; if you need a refresher or more information, the <a href="https://en.wikipedia.org/wiki/Java_annotation">wikipedia page</a> is a good place to start. This <a href="https://docs.oracle.com/javase/tutorial/java/annotations/index.html">Oracle tutorial</a> may also be helpful.</p>
+
+
+        <p>That will prepare you for the RAT (and see the questions below)</p>
+
+        <p>We will, later, need section 18.7 from the tutorial and "part 2" of the simple example.</p>
+
+        <p>Finally, note that we'll need some extra stuff to get WebSockets code running in Eclipse. So don't frustrate yourself trying to get the code in the readings to run.</p>
+
+        <h3>Questions to Guide Your Reading</h3>
+
+        <ol>
+          <li>Web interactions are usually "request-response;" how is WebSockets different?</li>
+
+           <li>How is a WebSocket "endpoint" different from a web server? How are they related? </li>
+
+          <li>What are the 4 elements of an endpoint's lifecycle? What "events" do they correspond to?</li>
+
+          <li>We know that with regular sockets, the server waits to accept() client connections. In WebSockets, what method of the server "endpoint" runs when a client tries to connect?</li>
+          
+          
+          <li>What kind of object keeps track of information about the current "conversation"? </li>
+
+          <li>How is the <a href="https://docs.oracle.com/javase/7/docs/api/java/util/Properties.html">Properties</a> class related to WebSockets?</li>
+
+         
+          <li>How does the WebSockets API make sure that received text messages are handled differently from received binary messages? </li>
+
+
+          
+          </ol>
+          
+
+    </div>
+</body>
+</html>

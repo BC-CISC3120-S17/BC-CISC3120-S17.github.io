@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Using Eclipse</title>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro'
+    rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div id="container">
+
+        <h2>Using Eclipse (Outside of Class)</h2>
+
+        <p>There are two places you might want to use Eclipse
+            outside of class: on a machine you control, and on a College
+            computer. In the first case, you can just install Eclipse
+            (as explained below), and it should work easily.</p>
+
+        <p>
+            In the second case (College labs), Eclipse is available in a
+            network folder which can be accessed on all machines. ITS
+            recommends that you copy that folder to the desktop of the
+            machine you're using. Or, copy the folder to your USB drive,
+            instead of following the install-on-USB instructions below.
+            This might save you some time, and make it easier to keep
+            your work safe. </p>
+	
+            <p>If you do run Eclipse from the desktop, make sure you delete your file sfrom
+            the computer when you're done working.</p>
+            
+            <p> If you
+            need to work at other labs, you will need to have Eclipse
+            installed on your USB drive (again, see below)<./p>
+
+            <h3>Installing Eclipse</h3>
+
+            <p>
+            Installing Eclipse is fairly straightforward. First
+            download
+            the <a href="http://www.eclipse.org/downloads/">installer</a>
+            for Eclipse Neon. If you're on a Mac, you'll need to unzip
+            the downloaded file (just double-click it). Then run the
+            installer. You should see options for several variants of
+            Eclipse: pick "Eclipse IDE for Java EE Developers," which
+            is probably the second option you'll see. You'll be asked
+            for an installation folder. The default choice is
+            perfectly fine, unless you know you want to put it
+            somewhere else. During the brief installation process,
+            you'll be asked to accept a license or two. When
+            installation is complete, click "Launch," and Eclipse will
+            run for the first time. You'll be asked to select a
+            "workspace directory," which is where all your Eclipse
+            projects will be kept; again, the default is fine unless
+            you have a strong opinion otherwise.  (If you still have a
+            lingering Eclipse Installer window open, you can close it
+            now.)
+            </p>
+
+
+	<p>You should also make sure you have the latest version of
+	the Java Development Kit (JDK), which is Java 8. You can
+	  get it <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">here</a>.
+
+        <h3>Other Items for your USB Drive</h3>
+
+        <p>
+            If you're using Eclipse on USB, you should make sure that
+            your Eclipse workspace is <em>also</em> on your USB drive.
+            Once you select a place for it, you can tell Eclipse to make
+            that your default workspace, so it will stop asking you each
+            time you start.
+        </p>
+
+        <p>
+            You may want to make sure Java 8 is on your USB drive, so
+                when you run the JDK installer,  make sure it installs <em>on
+                your USB drive</em>. Record the folder name (probably
+            something like
+            <code>e:\java\jdk1.8.0\</code>
+            ).
+        </p>
+        <p>
+            One last step: you need to be able to tell the operating
+            system where to find this version of Java, so you'll write a
+            very short script. Using Notepad, create a file in the root
+            directory of your USB drive called something like
+            <code>javaUSB.bat</code>
+            (the name doesn't really matter, but it needs to end in
+            <code>.bat</code>
+            ). In that file, type one line:
+        </p>
+
+
+        <code>set Path=java\jdk1.8.0\bin;%Path% </code>
+
+        <p>Note: don't use a drive letter, but otherwise make sure
+            the path matches the name of the folder where you installed
+            Java.</p>
+
+        <p>In order to run Eclipse, and make sure that you have the
+            right version of Java, open a command window and issue three
+            commands:</p>
+
+        <code>
+            E: <br />javaUSB <br /> eclipse\eclipse.exe<br />
+        </code>
+
+        <p>Again, the drive letter and particular paths may vary
+            depending on how you've set up your USB drive.</p>
+
+
+
+    </div>
+</body>
+</html>
